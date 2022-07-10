@@ -33,7 +33,7 @@ client.on("message",(msg)=>{
   {
     getQuote().then(quote=>msg.channel.send(quote));
   }
-  if(msg.content=="$Help" || msg.content=="$help"){
+  if(msg.content=="$Help" || msg.content=="$help" || msg.content=="$Help bot" || msg.content=="$help bot"){
     let a=["How may I be of service sir?", "How can I help you my master?"];
     let p=Math.floor(Math.random()*a.length);
     msg.reply(a[p])
